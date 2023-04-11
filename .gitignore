@@ -1,0 +1,17 @@
+*.pyc
+*~
+*.docx
+__pycache__
+venv
+/.vscode
+adminconfig.py
+sysadmin.wsgi
+sysadmin.wsgi.orig
+notes.txt
+static
+/scopusauthtokens/passcode/passcode.json
+/scopusauthtokens/tokenchecker/tokenchecker.json
+Instructions-CSER.docx
+Instructions-CSER.pdf
+Instructions-TESTING.docx
+Instructions-TESTING.pdf

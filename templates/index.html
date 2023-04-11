@@ -1,0 +1,24 @@
+{% extends "page.html" %}
+
+{% block body %}
+
+{{ status }}
+
+{% if showemailform %}
+<form method="post" action="{{ baseurl }}/resendpasscode">
+
+    <div class="bmd-form-group is-filled">
+        <label for="adminemail" class="bmd-label-floating">Admin email address</label>
+        <input type="text" name="adminemail" value="" maxlength="100" autocomplete="off" class="form-control" required="true" id="adminemail">                  
+    </div>
+
+    <div class="form-group mt-5">
+        <input type="submit" value="Send link" class="btn btn-info btn-round"/>
+    </div>
+
+</form>
+{% endif %}
+
+{% endblock %}
+
+

@@ -1,0 +1,33 @@
+{% extends "page.html" %}
+
+{% block body %}
+
+{{ body }}
+<form method="post" action="{{ baseurl }}/updatetokens/{{ userpasscode }}/" enctype="application/x-www-form-urlencoded">
+
+    <div class="bmd-form-group is-filled">
+        <label for="apikey" class="bmd-label-floating">API Key</label>
+        <input type="text" name="apikey" value="" maxlength="100" autocomplete="off" class="form-control" required="true" id="apikey">                  
+    </div>
+
+    <div class="bmd-form-group is-filled">
+        <label for="insttoken" class="bmd-label-floating">Insttoken</label>
+        <input type="text" name="insttoken" value="" maxlength="100" autocomplete="off" class="form-control" required="true" id="insttoken">                  
+    </div>
+    
+    <div class="bmd-form-group is-filled"></div>
+
+    <div class="bmd-form-group is-filled">
+        <label>Expiry date of tokens</label>
+        <input type="date" name="expirydate" value="" maxlength="100" autocomplete="off" class="form-control" required="true" id="expirydate">                  
+    </div>
+
+    <div class="form-group mt-5">
+        <input type="submit" value="Save authentication tokens" class="btn btn-info btn-round"/>
+    </div>
+
+</form>
+
+{% endblock %}
+
+
